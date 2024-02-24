@@ -1,2 +1,4 @@
 private_info.py
 notes.txt
+__pycache__/
+*.pyc
