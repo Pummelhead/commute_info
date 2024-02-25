@@ -12,7 +12,7 @@ def make_weather_home_call():
         current_weather_home = home_weather_data["list"][0]["weather"][0]["description"]
         six_hour_weather_home = home_weather_data["list"][2]["weather"][0]["description"]
         home_location = home_weather_data["city"]["name"]
-        return home_location, current_temp_home,current_weather_home, six_hour_temp_home, six_hour_weather_home
+        return home_location, current_temp_home, current_weather_home, six_hour_temp_home, six_hour_weather_home
     else:
         print(f"Error: {home_weather_response.status_code}")
         return None  
