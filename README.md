@@ -4,9 +4,13 @@ Weather and traffic info about commute
 I'm pulling info from OpenWeather and Google Maps
 
 I use a file called private_info.py to store the values  
-of my home and work zip code as well as my API keys.  
-If you look at the variable names I import that will give you an idea  
-of how to set up your variables.  
+Values needed:  
+    home_zip = "XXXXX" (for weather)
+    home_address = "123+n+example+street+los+angeles+ca" (for travel)
+    work_zip = "XXXXX" (for weather)
+    work_address = "456+s+fake+road+los+angeles+ca" (for travel)
+    weather_api_key = "XXXXXXXXXXXXX" (OpenWeather)
+    maps_api_key = "XXXXXXXXXXXX" (Google Maps)
   
 You will need the requests library. pip install requests
 
