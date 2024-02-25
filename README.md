@@ -11,8 +11,10 @@ Values needed:
     work_address = "456+s+fake+road+los+angeles+ca" (for travel)
     weather_api_key = "XXXXXXXXXXXXX" (OpenWeather)
     maps_api_key = "XXXXXXXXXXXX" (Google Maps)
-  
-You will need the requests library. pip install requests
+    sender_email = 'example@gmail.com'
+    receiver_email = 'example@gmail.com'
+    password = 'xxxxxxxxxx'
+To use gmail you need to create an app password
 
 With how the OpenWeather API works I plan on having the  
 program run in the morning to give me the "current" temp  
