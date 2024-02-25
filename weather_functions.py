@@ -8,9 +8,11 @@ def make_weather_home_call():
         print("Home Weather Pull Completed")
         home_weather_data = home_weather_response.json()
         current_temp_home = home_weather_data["list"][0]["main"]["temp"]
-        max_temp_home = home_weather_data["list"][2]["main"]["temp"]
+        six_hour_temp_home = home_weather_data["list"][2]["main"]["temp"]
+        current_weather_home = home_weather_data["list"][0]["weather"][0]["description"]
+        six_hour_weather_home = home_weather_data["list"][2]["weather"][0]["description"]
         home_location = home_weather_data["city"]["name"]
-        return home_location, current_temp_home, max_temp_home
+        return home_location, current_temp_home,current_weather_home, six_hour_temp_home, six_hour_weather_home
     else:
         print(f"Error: {home_weather_response.status_code}")
         return None  
@@ -22,9 +24,11 @@ def make_weather_work_call():
         print("Work Weather Pull Completed")
         work_weather_data = work_weather_response.json()
         current_temp_work = work_weather_data["list"][0]["main"]["temp"]
-        max_temp_work = work_weather_data["list"][2]["main"]["temp"]
+        six_hour_temp_work = work_weather_data["list"][2]["main"]["temp"]
+        current_weather_work = work_weather_data["list"][0]["weather"][0]["description"]
+        six_hour_weather_work = work_weather_data["list"][2]["weather"][0]["description"]
         work_location = work_weather_data["city"]["name"]
-        return work_location, current_temp_work, max_temp_work
+        return work_location, current_temp_work, current_weather_work, six_hour_temp_work, six_hour_weather_work
     else:
         print(f"Error: {work_weather_response.status_code}")
         return None
