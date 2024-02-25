@@ -1,3 +1,4 @@
+import sys
 from weather_functions import make_weather_home_call, make_weather_work_call
 from traffic_functions import make_traffic_call
 from email_functions import send_email
@@ -55,6 +56,8 @@ def main():
         subject = "Unfortunately you will have to use 4 wheels today."
 
     send_email(subject, body)
+
+    sys.exit()
 
 
 if __name__ == "__main__":

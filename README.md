@@ -5,6 +5,8 @@ If you run in afternoon or night logic doesn't quite work
 
 I'm pulling info from OpenWeather and Google Maps
 I'm using gmail to send the email
+You will need "requests" to run this program
+>pip install requests
 
 I use a file called private_info.py to store the values  
 Values needed:  
