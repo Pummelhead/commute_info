@@ -50,7 +50,7 @@ def main():
         subject = "IT'S A MOTORCYCLE DAY!"
     elif current_temp_home >=40 and current_temp_home <50 and home_weather_good_now and work_weather_good_now and home_weather_six_hour_good and work_weather_six_hour_good:
         subject = "It's a cold one today. Bundle up on the bike!"
-    elif warm_enough and not home_weather_good_now or not work_weather_good_now or not home_weather_six_hour_good or not work_weather_six_hour_good:
+    elif warm_enough and (not home_weather_good_now or not work_weather_good_now or not home_weather_six_hour_good or not work_weather_six_hour_good):
         subject = "Weather is looking rough but warm. May want to drive today."
     else:
         subject = "Unfortunately you will have to use 4 wheels today."
