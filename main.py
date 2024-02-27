@@ -26,12 +26,12 @@ def main():
     else:
         warm_enough = False
 
-    if current_weather_home == "shower rain" or "thunderstorm" or "snow":
+    if current_weather_home == "shower rain" or "thunderstorm" or "snow" or "light snow":
         home_weather_good_now = False
     else:
         home_weather_good_now = True
 
-    if current_weather_work == "shower rain" or "thunderstorm" or "snow":
+    if current_weather_work == "shower rain" or "thunderstorm" or "snow" or "light snow":
         work_weather_good_now = False
     else:
         work_weather_good_now = True
