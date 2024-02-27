@@ -36,12 +36,12 @@ def main():
     else:
         work_weather_good_now = True
 
-    if six_hour_weather_home == "shower rain" or "thunderstorm" or "snow" or "rain":
+    if six_hour_weather_home == "shower rain" or "thunderstorm" or "snow" or "rain" or "light snow":
         home_weather_six_hour_good = False
     else:
         home_weather_six_hour_good = True
 
-    if six_hour_weather_work == "shower rain" or "thunderstorm" or "snow" or "rain":
+    if six_hour_weather_work == "shower rain" or "thunderstorm" or "snow" or "rain" or "light snow":
         work_weather_six_hour_good = False
     else:
         work_weather_six_hour_good = True
