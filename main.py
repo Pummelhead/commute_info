@@ -26,22 +26,22 @@ def main():
     else:
         warm_enough = False
 
-    if current_weather_home == "shower rain" or "thunderstorm" or "snow" or "rain" or "light snow":
+    if current_weather_home in ["shower rain", "thunderstorm", "snow", "rain", "light snow"]:
         home_weather_good_now = False
     else:
         home_weather_good_now = True
 
-    if current_weather_work == "shower rain" or "thunderstorm" or "snow" or "rain" or "light snow":
+    if current_weather_work in ["shower rain", "thunderstorm", "snow", "rain", "light snow"]:
         work_weather_good_now = False
     else:
         work_weather_good_now = True
 
-    if six_hour_weather_home == "shower rain" or "thunderstorm" or "snow" or "rain" or "light snow":
+    if six_hour_weather_home in ["shower rain", "thunderstorm", "snow", "rain", "light snow"]:
         home_weather_six_hour_good = False
     else:
         home_weather_six_hour_good = True
 
-    if six_hour_weather_work == "shower rain" or "thunderstorm" or "snow" or "rain" or "light snow":
+    if six_hour_weather_work in ["shower rain", "thunderstorm", "snow", "rain", "light snow"]:
         work_weather_six_hour_good = False
     else:
         work_weather_six_hour_good = True
